@@ -579,8 +579,11 @@
                                 <span class="icon-tourist"></span>
                             </div>
                             <h3 class="services-one__title"><a href="#">Tourist Visa</a></h3>
-                            <p class="services-one__text">Explore with ease; seamless entry to your dream destinations
-                                awaits.</p>
+                            <p class="services-one__text">
+                                Explore with ease; seamless entry to your dream destinations
+                                awaits.
+                                <br/><br/>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -1647,10 +1650,10 @@
                                 States.
                             </p>
                             <div class="site-footer__social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-facebook"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/skvisasolutioncentre/"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/skvisasolution"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.twitter.com/skvisasolution"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.tiktok.com//@skvisasolution"><i class="fab fa-tiktok"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1811,6 +1814,36 @@
 
 <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="icon-right-arrow"></i></a>
 
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "217330218129876");
+    chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            xfbml            : true,
+            version          : 'v19.0'
+        });
+    };
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 
 <script src="assets/vendors/jquery/jquery-3.6.4.min.js"></script>
 <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
